@@ -1,20 +1,28 @@
+import java.time.OffsetDateTime;
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
-    private final  static String WELCOME_MESSAGE = "Olá informe o seu nome?";
 
     public static void main(String[] args) {
 
-        //não vai parar o breakpoint;
-        Scanner scanner = new Scanner(System.in);
-        System.out.println(WELCOME_MESSAGE);
-        String name = scanner.next();
-        System.out.println("Informe sua idade?");
-        String age = scanner.next();
-        System.out.printf("Olá %s sua idade é %s.\n",name, age);
-
+        /* ex4:
+        var scanner = new Scanner(System.in);
+        System.out.println("Informe o número: ");
+        var number = scanner.nextInt();
+        var keepVerify = true;
+        while (keepVerify){
+            System.out.println("Informe o numero para verificação");
+            var toVerify = scanner.nextInt();
+            if(toVerify < number){
+                System.out.printf("Informe um numero maior que %s \n", number);
+                continue;
+            }
+            var result = toVerify % number;
+            keepVerify = result == 0;
+            System.out.printf("%s %% %s = %s \n", toVerify, number, result);
+            if (result != 0) break;
+        }
+         */
     }
 }
