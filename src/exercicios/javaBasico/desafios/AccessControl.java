@@ -15,7 +15,7 @@ public class AccessControl {
         // TODO: Verifique condições de acesso
         if(age >= 18 &&  hasPermission){
             System.out.println("Acesso permitido");
-        }else if(age >= 18 && !hasPermission){
+        }else if(age >= 18 && hasPermission){
             System.out.println("Acesso negado");
         } else if( age  < 18 && hasPermission){
             System.out.println("Idade insuficiente");
